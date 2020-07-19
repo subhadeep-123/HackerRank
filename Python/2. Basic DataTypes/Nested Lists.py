@@ -1,25 +1,11 @@
-"""5
-Harry
-37.21
-Berry
-37.21
-Tina
-37.2
-Akriti
-41
-Harsh
-39"""
+studs = []
+n = int(input())
+for i in range(n):
+    studs.append([input(), float(input())])
 
-#n = int(input())
-studs = [['Harry', 37.21], ['Berry', 37.21], [
-    'Tina', 37.2], ['Akriti', 41.0], ['Harsh', 39.0]]
-#cols = []
+score = sorted(list(set([studs[x][1] for x in range(n)])))
 
-"""for i in range(n):
-    cols = input().split()
-    cols[1] = int(cols[1])
-    studs.append(cols)
-print(studs)"""
-
-studs.sort(key=lambda x: x[1])
-print(studs)
+studs = [x[0] for x in studs if x[1] == score[1]]
+studs.sort()
+for s in studs:
+    print(s)
