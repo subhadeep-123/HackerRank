@@ -1,0 +1,5 @@
+m = int(input())
+s1 = set(map(int, input().split()))
+m = int(input())
+s2 = set(map(int, input().split()))
+print(*sorted(s1 ^ s2), sep='\n')
