@@ -1,8 +1,7 @@
 A = set(input().split())
-check = True
-for i in range(int(input())):
-    s = set(input().split())
-    if (s & A != s) or (s == A):
-        check = False
+for _ in range(int(input())):
+    if not A.issuperset(set(input().split())):
+        print(False)
         break
-print(check)
+    else:
+        print(True)
