@@ -1,2 +1,2 @@
-This repository contains the Solutions of HackerRank Python Problems
+This  contains the Solutions of HackerRank Python Problems
 
